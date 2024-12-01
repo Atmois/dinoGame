@@ -27,7 +27,7 @@ var scrollX = 0;
 window.onload = function () {
     dinoGame = document.getElementById("dinoGame");
     scoreTxt = document.getElementById("scoreTxt");
-    toggleViewModeBtn = document.getElementById("toggleDarkMode");
+    toggleViewModeBtn = document.getElementById("toggleViewMode");
 
     resizeCanvas();
 
@@ -39,13 +39,13 @@ window.onload = function () {
     document.addEventListener("touchstart", handleTouchStart);
     document.addEventListener("mousedown", handleMouseClick);
     window.addEventListener("resize", resizeCanvas);
-    toggleViewModeBtn.addEventListener("click", toggleDarkMode);
+    toggleViewModeBtn.addEventListener("click", toggleViewMode);
 
     setInterval(redraw, 100);
 };
 
 // Toggle dark mode
-function toggleDarkMode() {
+function toggleViewMode() {
     document.body.classList.toggle("dark-mode");
 }
 
