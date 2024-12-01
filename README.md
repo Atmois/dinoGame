@@ -1,0 +1,3 @@
+# dinoGame
+
+Basic dino game 
