@@ -13,6 +13,9 @@
     --border-color: #000000;
     --button-background: #e0e0e0;
     --button-text: #000000;
+    --macchiato-text: #cad3f5;
+    --macchiato-link: #8aadf4;
+    --macchiato-link-hover: #b7bdf8;
 }
 
 body.dark-mode {
@@ -21,6 +24,9 @@ body.dark-mode {
     --border-color: #cad3f5;
     --button-background: #494d64;
     --button-text: #cad3f5;
+    --macchiato-text: #cad3f5;
+    --macchiato-link: #8aadf4;
+    --macchiato-link-hover: #b7bdf8;
 }
 
 body {
@@ -74,4 +80,18 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+p {
+    color: var(--macchiato-text);
+}
+
+p a {
+    color: var(--macchiato-link);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+p a:hover {
+    color: var(--macchiato-link-hover);
 }
